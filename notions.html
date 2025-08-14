@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Notions de Base : Algorithme & Python</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f9f9f9;
+        line-height: 1.6;
+      }
+      h1 {
+        color: #2c3e50;
+        text-align: center;
+      }
+      h2 {
+        color: #34495e;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 5px;
+      }
+      h3 {
+        color: #16a085;
+      }
+      pre {
+        background: #2d2d2d;
+        color: #00ff00;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      code {
+        font-family: monospace;
+      }
+      table {
+        border-collapse: collapse;
+        margin: 10px 0;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid #333;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background: #555;
+        color: #fff;
+      }
+      .note {
+        background: #f1c40f;
+        padding: 5px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📘 Notions de Base : Algorithme & Python</h1>
+
+    <h2>1️⃣ Définition</h2>
+    <p>
+      Un <strong>algorithme</strong> est une suite d’étapes logiques, bien
+      définies et exécutables permettant de résoudre un problème. Il transforme
+      une <strong>entrée</strong> en une <strong>sortie</strong>.
+    </p>
+
+    <h3>Exemple d'algorithme :</h3>
+    <pre>
+algorithme Afficher_Message
+debut
+    ecrire("Bienvenue dans le monde des algorithmes !")
+fin
+</pre
+    >
+
+    <pre>
+print("Bienvenue dans le monde des algorithmes !")
+</pre
+    >
+
+    <h2>2️⃣ Caractéristiques d’un bon algorithme</h2>
+    <ul>
+      <li>
+        <strong>Finitude</strong> : Il doit se terminer après un nombre limité
+        d’étapes.
+      </li>
+      <li>
+        <strong>Lisibilité</strong> : Compréhensible par un humain pour
+        faciliter la maintenance.
+      </li>
+      <li>
+        <strong>Efficacité</strong> : Optimiser l’usage des ressources (temps et
+        mémoire).
+      </li>
+      <li>
+        <strong>Modularité</strong> : Divisé en sous-parties réutilisables.
+      </li>
+    </ul>
+
+    <h2>3️⃣ Structure générale d’un algorithme</h2>
+    <pre>
+algorithme Nom_Algorithme
+debut
+    // Instructions
+fin
+</pre
+    >
+
+    <h3>Déclaration des variables</h3>
+    <table>
+      <tr>
+        <th>Objets</th>
+        <th>Types</th>
+      </tr>
+      <tr>
+        <td>var1</td>
+        <td>Type1</td>
+      </tr>
+      <tr>
+        <td>var2</td>
+        <td>Type2</td>
+      </tr>
+    </table>
+
+    <h2>4️⃣ Les Variables</h2>
+
+    <h3>4.1 Types de Variables</h3>
+    <table>
+      <tr>
+        <th>Type de Variable</th>
+        <th>Algorithmique</th>
+        <th>Python</th>
+      </tr>
+      <tr>
+        <td>Entier</td>
+        <td>entier</td>
+        <td>int</td>
+      </tr>
+      <tr>
+        <td>Réel</td>
+        <td>réel</td>
+        <td>float</td>
+      </tr>
+      <tr>
+        <td>Booléen</td>
+        <td>booléen</td>
+        <td>bool</td>
+      </tr>
+      <tr>
+        <td>Caractère</td>
+        <td>caractère</td>
+        <td>str (1 caractère)</td>
+      </tr>
+      <tr>
+        <td>Chaîne</td>
+        <td>chaîne</td>
+        <td>str (suite de caractères)</td>
+      </tr>
+    </table>
+
+    <h3>4.2 Variables Complexes</h3>
+    <table>
+      <tr>
+        <th>Type de Variable</th>
+        <th>Algorithmique</th>
+        <th>Python</th>
+      </tr>
+      <tr>
+        <td>Tableau</td>
+        <td>liste d'éléments de même type</td>
+        <td>list</td>
+      </tr>
+      <tr>
+        <td>Matrice</td>
+        <td>tableau à deux dimensions</td>
+        <td>list de lists</td>
+      </tr>
+      <tr>
+        <td>Enregistrement</td>
+        <td>regroupement de champs de types différents</td>
+        <td>dict</td>
+      </tr>
+      <tr>
+        <td>Fichier</td>
+        <td>stockage permanent</td>
+        <td>open()</td>
+      </tr>
+    </table>
+
+    <h3>Exemple de déclaration et utilisation :</h3>
+    <pre>
+age = 25          # entier
+nom = "Ali"       # chaîne
+note = 15.5       # réel
+est_admis = True  # booléen
+</pre
+    >
+
+    <h2>5️⃣ Les Opérateurs</h2>
+
+    <h3>5.1 Arithmétiques</h3>
+    <table>
+      <tr>
+        <th>Opération</th>
+        <th>Algorithmique</th>
+        <th>Python</th>
+      </tr>
+      <tr>
+        <td>Addition</td>
+        <td>+</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>Soustraction</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Multiplication</td>
+        <td>*</td>
+        <td>*</td>
+      </tr>
+      <tr>
+        <td>Division</td>
+        <td>/</td>
+        <td>/</td>
+      </tr>
+      <tr>
+        <td>Division entière</td>
+        <td>div</td>
+        <td>//</td>
+      </tr>
+      <tr>
+        <td>Modulo</td>
+        <td>mod</td>
+        <td>%</td>
+      </tr>
+    </table>
+
+    <pre>
+a = 10
+b = 3
+print(a + b)   # 13
+print(a - b)   # 7
+print(a * b)   # 30
+print(a / b)   # 3.3333
+print(a // b)  # 3
+print(a % b)   # 1
+</pre
+    >
+
+    <h3>5.2 Comparaison</h3>
+    <table>
+      <tr>
+        <th>Opération</th>
+        <th>Algorithmique</th>
+        <th>Python</th>
+      </tr>
+      <tr>
+        <td>Inférieur à</td>
+        <td>&lt;</td>
+        <td>&lt;</td>
+      </tr>
+      <tr>
+        <td>Inférieur ou égal à</td>
+        <td>≤</td>
+        <td>&lt;=</td>
+      </tr>
+      <tr>
+        <td>Supérieur à</td>
+        <td>&gt;</td>
+        <td>&gt;</td>
+      </tr>
+      <tr>
+        <td>Supérieur ou égal à</td>
+        <td>≥</td>
+        <td>&gt;=</td>
+      </tr>
+      <tr>
+        <td>Égalité</td>
+        <td>=</td>
+        <td>==</td>
+      </tr>
+      <tr>
+        <td>Différent de</td>
+        <td>≠</td>
+        <td>!=</td>
+      </tr>
+    </table>
+
+    <pre>
+x = 10
+y = 5
+print(x > y)     # True
+print(x <= y)    # False
+print(x == 10)   # True
+print(x != 5)    # True
+</pre
+    >
+
+    <h3>5.3 Logiques</h3>
+    <table>
+      <tr>
+        <th>Opération</th>
+        <th>Algorithmique</th>
+        <th>Python</th>
+      </tr>
+      <tr>
+        <td>ET logique</td>
+        <td>et</td>
+        <td>and</td>
+      </tr>
+      <tr>
+        <td>OU logique</td>
+        <td>ou</td>
+        <td>or</td>
+      </tr>
+      <tr>
+        <td>NON logique</td>
+        <td>non</td>
+        <td>not</td>
+      </tr>
+    </table>
+
+    <pre>
+a = True
+b = False
+print(a and b)  # False
+print(a or b)   # True
+print(not a)    # False
+</pre
+    >
+
+    <h2>6️⃣ Entrées et Sorties</h2>
+
+    <h3>6.1 Algorithme</h3>
+    <pre>
+algorithme Lire_Afficher
+debut
+    ecrire("Entrez votre nom :")
+    lire(nom)
+    ecrire("Bonjour ", nom, " !")
+fin
+</pre
+    >
+
+    <h3>6.2 Python</h3>
+    <pre>
+nom = input("Entrez votre nom : ")
+print("Bonjour", nom, "!")
+</pre
+    >
+
+    <h3>6.3 Lecture et Conversion des données</h3>
+    <table>
+      <tr>
+        <th>Type de valeur</th>
+        <th>Algorithme</th>
+        <th>Python</th>
+      </tr>
+      <tr>
+        <td>Entier</td>
+        <td>lire(x)</td>
+        <td>x = int(input())</td>
+      </tr>
+      <tr>
+        <td>Réel</td>
+        <td>lire(x)</td>
+        <td>x = float(input())</td>
+      </tr>
+      <tr>
+        <td>Chaîne</td>
+        <td>lire(ch)</td>
+        <td>ch = input()</td>
+      </tr>
+    </table>
+
+    <pre>
+x = int(input("Entrez un nombre entier : "))
+print("Vous avez saisi :", x)
+</pre
+    >
+
+    <h2>7️⃣ Exercices et Solutions (Partie 1)</h2>
+
+    <h3>1️⃣ Affichage simple</h3>
+    <pre>
+algorithme Affichage_Simple
+debut
+    ecrire("Bonjour, bienvenue en algorithmique !")
+fin
+</pre
+    >
+
+    <pre>
+print("Bonjour, bienvenue en algorithmique !")
+</pre
+    >
+
+    <h3>2️⃣ Lecture et affichage d’un entier</h3>
+    <pre>
+algorithme Lecture_Affichage_Entier
+debut
+    ecrire("Veuillez saisir un nombre entier :")
+    lire(n)
+    ecrire("Vous avez saisi le nombre : ", n)
+fin
+</pre
+    >
+
+    <pre>
+n = int(input("Veuillez saisir un nombre entier : "))
+print("Vous avez saisi le nombre :", n)
+</pre
+    >
+
+    <h3>3️⃣ Somme de deux nombres</h3>
+    <pre>
+algorithme Somme_Deux_Nombres
+debut
+    ecrire("Veuillez saisir deux nombres entiers :")
+    lire(a, b)
+    somme ← a + b
+    ecrire("La somme de ", a, " et ", b, " est : ", somme)
+fin
+</pre
+    >
+
+    <pre>
+a = int(input("Veuillez saisir un premier nombre entier : "))
+b = int(input("Veuillez saisir un second nombre entier : "))
+somme = a + b
+print("La somme de", a, "et", b, "est :", somme)
+</pre
+    >
+
+    <!-- Suite du fichier précédent, après l'exercice 3 -->
+
+    <h3>4️⃣ Produit de deux nombres réels</h3>
+    <pre>
+algorithme Produit_Deux_Nombres_Reels
+debut
+    ecrire("Veuillez saisir deux nombres réels :")
+    lire(x, y)
+    produit ← x * y
+    ecrire("Le produit de ", x, " et ", y, " est : ", produit)
+fin
+</pre
+    >
+
+    <pre>
+x = float(input("Veuillez saisir un premier nombre réel : "))
+y = float(input("Veuillez saisir un second nombre réel : "))
+produit = x * y
+print("Le produit de", x, "et", y, "est :", produit)
+</pre
+    >
+
+    <h3>5️⃣ Échange de valeurs</h3>
+    <pre>
+algorithme Echange_De_Valeurs
+debut
+    ecrire("Veuillez saisir deux valeurs :")
+    lire(a, b)
+    aux ← a
+    a ← b
+    b ← aux
+    ecrire("Après échange : a = ", a, " et b = ", b)
+fin
+</pre
+    >
+
+    <pre>
+a = int(input("Veuillez saisir un premier nombre entier : "))
+b = int(input("Veuillez saisir un second nombre entier : "))
+aux = a
+a = b
+b = aux
+print("Après échange : a =", a, "et b =", b)
+</pre
+    >
+
+    <h3>6️⃣ Moyenne de trois nombres</h3>
+    <pre>
+algorithme Moyenne_Trois_Nombres
+debut
+    ecrire("Veuillez saisir trois nombres :")
+    lire(a, b, c)
+    m ← (a + b + c) / 3
+    ecrire("La moyenne des trois nombres est : ", m)
+fin
+</pre
+    >
+
+    <pre>
+a = int(input("Veuillez saisir un premier nombre entier : "))
+b = int(input("Veuillez saisir un second nombre entier : "))
+c = int(input("Veuillez saisir un troisième nombre entier : "))
+moyenne = (a + b + c) / 3
+print("La moyenne des trois nombres est :", moyenne)
+</pre
+    >
+
+    <h3>7️⃣ Calcul du carré d’un nombre</h3>
+    <pre>
+algorithme Carre_Du_Nombre
+debut
+    ecrire("Veuillez saisir un nombre :")
+    lire(n)
+    carre ← n * n
+    ecrire("Le carré du nombre ", n, " est : ", carre)
+fin
+</pre
+    >
+
+    <pre>
+n = int(input("Veuillez saisir un nombre entier : "))
+carre = n * n
+print("Le carré du nombre", n, "est :", carre)
+</pre
+    >
+
+    <h3>8️⃣ Conversion Celsius en Fahrenheit</h3>
+    <pre>
+algorithme Conversion_Celsius_Fahrenheit
+debut
+    ecrire("Veuillez saisir la température en degrés Celsius :")
+    lire(celsius)
+    fahrenheit ← (celsius * 9/5) + 32
+    ecrire("La température en Fahrenheit est : ", fahrenheit)
+fin
+</pre
+    >
+
+    <pre>
+celsius = float(input("Veuillez saisir la température en degrés Celsius : "))
+fahrenheit = (celsius * 9/5) + 32
+print("La température en Fahrenheit est :", fahrenheit)
+</pre
+    >
+
+    <h3>9️⃣ Addition de trois nombres</h3>
+    <pre>
+algorithme Addition_Trois_Nombres
+debut
+    ecrire("Veuillez saisir trois nombres :")
+    lire(a, b, c)
+    somme ← a + b + c
+    ecrire("La somme des trois nombres est : ", somme)
+fin
+</pre
+    >
+
+    <pre>
+a = int(input("Veuillez saisir un premier nombre entier : "))
+b = int(input("Veuillez saisir un second nombre entier : "))
+c = int(input("Veuillez saisir un troisième nombre entier : "))
+somme = a + b + c
+print("La somme des trois nombres est :", somme)
+</pre
+    >
+
+    <h3>🔟 Calcul du périmètre et de l’aire d’un rectangle</h3>
+    <pre>
+algorithme Perimetre_Aire_Rectangle
+debut
+    ecrire("Veuillez saisir la longueur et la largeur du rectangle :")
+    lire(longueur, largeur)
+    p ← 2 * (longueur + largeur)
+    aire ← longueur * largeur
+    ecrire("Le périmètre du rectangle est : ", p)
+    ecrire("L'aire du rectangle est : ", aire)
+fin
+</pre
+    >
+
+    <pre>
+longueur = int(input("Veuillez saisir la longueur du rectangle : "))
+largeur = int(input("Veuillez saisir la largeur du rectangle : "))
+perimetre = 2 * (longueur + largeur)
+aire = longueur * largeur
+print("Le périmètre du rectangle est :", perimetre)
+print("L'aire du rectangle est :", aire)
+</pre
+    >
+
+    <h2>✅ Fin du cours Notions de Base : Algorithme & Python</h2>
+    <p>
+      Vous pouvez maintenant héberger ce fichier HTML et partager le lien sur
+      Discord pour vos étudiants ou amis. 🌐
+    </p>
+  </body>
+</html>
